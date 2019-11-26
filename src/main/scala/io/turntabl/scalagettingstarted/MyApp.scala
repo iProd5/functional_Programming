@@ -1,5 +1,6 @@
 package io.turntabl.scalagettingstarted
 
 object MyApp extends App {
-    print("Hello, World!")
+   val returnTheLenghtOfAString= (stringWord: String)=> stringWord.length
+    returnTheLenghtOfAString("franklin")
 }
