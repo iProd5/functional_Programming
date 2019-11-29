@@ -17,6 +17,8 @@ val spacesInString = (word: String) => word.count(_ ==' ')
 val calculate = (instruction: String) => (num1:Int, num2: Int)=> instruction match {
   case "add" => num1 + num2
   case "sub" => num1 - num2
+  case "mult" => num1 * num2
+  case "div" => num1 / num2
 }
 //  adding
 //  val instWord= calculate("sub")
@@ -25,4 +27,12 @@ val calculate = (instruction: String) => (num1:Int, num2: Int)=> instruction mat
 //subtration
 //  val instWord1= calculate("add")
 //  print( instWord1(4,6))
+
+//  multiply
+//  val instword = calculate("mult")
+//  print(instword(4,6))
+
+//  divide
+  val instword = calculate("div")
+  print(instword(6,6))
 }
